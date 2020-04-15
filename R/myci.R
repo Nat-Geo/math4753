@@ -1,10 +1,10 @@
 #' My confidence interval generator
 #'
-#'Finds a 95% confidence interval for the mean
+#'Finds a 95 percent confidence interval for the mean
 #'
-#'Given a set of data, computes and returns a 95% confidence interval for the mean of that set
+#'Given a set of data, computes and returns a 95 percent confidence interval for the mean of that set
 #'
-#' @param y a vector of data to find a confidence interval 0n
+#' @param y a vector of data to find a confidence interval on
 #'
 #' @return ci, a list containing the lower and upper boundaries of the interval
 #' @return conflevel, the confidence level of the interval

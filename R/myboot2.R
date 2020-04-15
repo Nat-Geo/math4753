@@ -7,18 +7,20 @@
 #' @param iter the number of samples to take for a bootstrap simulation, default 10000
 #' @param x a vector containing the population
 #' @param fun a character string with the name of the function to be examined, default is "mean"
-#' @param alpha the parameter determining the confidence level of the interval to (1-alpha)%, default is 0.05
+#' @param alpha the parameter determining the confidence level of the interval to 1-alpha percent, default is 0.05
 #' @param cx a character expansion factor applied to the text added to the histogram
 #' @param ... a series of parameters passed to the hist() call that generates the histogram
 #'
-#' @return ci, the confidence interval; x, the input population; fun, the function being examined
+#' @return ci, the confidence interval
+#' @return x, the input population
+#' @return fun, the function being examined
 #' @export
 #'
 #' @examples
 #'
 #' set.seed(20)
-#' sam=rnrom(20,mean=10,sd=4)
-#' myboot2(sam)
+#' sam=rnorm(20,mean=10,sd=4)
+#' myboot2(x = sam)
 myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
   n=length(x)   #sample size
 

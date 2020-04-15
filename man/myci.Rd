@@ -7,7 +7,7 @@
 myci(y)
 }
 \arguments{
-\item{y}{a vector of data to find a confidence interval 0n}
+\item{y}{a vector of data to find a confidence interval on}
 }
 \value{
 ci, a list containing the lower and upper boundaries of the interval
@@ -15,10 +15,10 @@ ci, a list containing the lower and upper boundaries of the interval
 conflevel, the confidence level of the interval
 }
 \description{
-Finds a 95% confidence interval for the mean
+Finds a 95 percent confidence interval for the mean
 }
 \details{
-Given a set of data, computes and returns a 95% confidence interval for the mean of that set
+Given a set of data, computes and returns a 95 percent confidence interval for the mean of that set
 }
 \examples{
 set.seed(12); sam1 = rnorm(20, mean = 5, sd = 3); myci(sam1)

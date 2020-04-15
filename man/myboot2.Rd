@@ -13,14 +13,18 @@ myboot2(iter = 10000, x, fun = "mean", alpha = 0.05, cx = 1.5, ...)
 
 \item{fun}{a character string with the name of the function to be examined, default is "mean"}
 
-\item{alpha}{the parameter determining the confidence level of the interval to (1-alpha)%, default is 0.05}
+\item{alpha}{the parameter determining the confidence level of the interval to 1-alpha percent, default is 0.05}
 
 \item{cx}{a character expansion factor applied to the text added to the histogram}
 
 \item{...}{a series of parameters passed to the hist() call that generates the histogram}
 }
 \value{
-ci, the confidence interval; x, the input population; fun, the function being examined
+ci, the confidence interval
+
+x, the input population
+
+fun, the function being examined
 }
 \description{
 Runs a bootstrap simulation to create a confidence interval
@@ -31,6 +35,6 @@ Given a vector containing the population, creates iter random samples and runs a
 \examples{
 
 set.seed(20)
-sam=rnrom(20,mean=10,sd=4)
-myboot2(sam)
+sam=rnorm(20,mean=10,sd=4)
+myboot2(x = sam)
 }
